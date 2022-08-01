@@ -14,12 +14,12 @@ collections:
       widget: "list"
       fields:
         - {
-            label: FAQS
-            name: faqs
-            widget: list
+            label: 'Posts',
+            name : 'posts',
+            widget: list,
             fields: 
-              - label: FAQ
-                name: faq
+              - label: 'Postss'
+                name: 'postss'
                 widget: object
                 fields:
                   - { label: Question, name: question, widget: string, default: "Question" }
