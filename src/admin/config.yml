@@ -8,20 +8,16 @@ public_folder: "/images/uploads"
 collections:
   - name: "posts"
     label: "Posts"
-    - file: "src/posts/posts.json"
-      label: "Posts"
-      name: "posts"
-      widget: "list"
-      fields:
-        - {
-            label: 'Posts',
-            name : 'posts',
-            widget: list,
-            fields: 
-              - label: 'Postss'
-                name: 'postss'
-                widget: object
-                fields:
-                  - { label: Question, name: question, widget: string, default: "Question" }
-                  - { label: Answer, name: answer, widget: string, default: "Answer" }
-          } 
+    folder: "_site/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "layouts/post.html",
+        }
+      - { label: "Title", name: "title", widget: "list" }
+      - { label: "Post Body", name: "body", widget: "markdown" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
