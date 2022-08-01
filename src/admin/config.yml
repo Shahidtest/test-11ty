@@ -14,10 +14,14 @@ collections:
       widget: "list"
       fields:
         - {
-            label: "Layout",
-            name: "layout",
-            widget: "hidden",
-            default: "layouts/post.html",
-          }
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Featured Image", name: "featuredImage", widget: "image" }
+            label: FAQS
+            name: faqs
+            widget: list
+            fields: 
+              - label: FAQ
+                name: faq
+                widget: object
+                fields:
+                  - { label: Question, name: question, widget: string, default: "Question" }
+                  - { label: Answer, name: answer, widget: string, default: "Answer" }
+          } 
