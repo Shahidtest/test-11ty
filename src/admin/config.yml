@@ -12,6 +12,8 @@ collections:
     # folder: "src/posts"
     files:
       - file: "src/posts/posts.json"
+        label: "Posts"
+        name: "posts"
     # create: true
     # slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
