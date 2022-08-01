@@ -8,21 +8,17 @@ public_folder: "/images/uploads"
 collections:
   - name: "posts"
     label: "Posts"
-    extension: "json"
-    # folder: "src/posts"
     files:
-      - file: "src/posts/posts.json"
-        label: "Posts"
-        name: "posts"
-    # create: true
-    # slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {
-          label: "Layout",
-          name: "layout",
-          widget: "hidden",
-          default: "layouts/post.html",
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Post Body", name: "body", widget: "markdown" }
-      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+    - file: "src/posts/posts.json"
+      label: "Posts"
+      name: "posts"
+      fields:
+        - {
+            label: "Layout",
+            name: "layout",
+            widget: "hidden",
+            default: "layouts/post.html",
+          }
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Post Body", name: "body", widget: "markdown" }
+        - { label: "Featured Image", name: "featuredImage", widget: "image" }
