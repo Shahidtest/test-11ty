@@ -24,12 +24,24 @@ collections:
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
   - name: "pposts"
     label: "PPosts"
-    files: "src/posts/posts.json"
-    extension: "json"
     fields:
       - { label: "Posts", name: "posts", widget: "lists", 
           fields: {
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Featured Image", name: "featuredImage", widget: "image" }
       }}
+
+  - name: "PostList"
+    label: "Posts"
+    files:
+      - label: "posts"
+        name: "posts"
+        file: "src/posts/posts.json"
+        fields:
+          - label: "Post List"
+            name: "posts"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Featured Image", name: "featuredImage", widget: "image" }
      
