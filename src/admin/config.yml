@@ -9,9 +9,9 @@ collections:
   - name: "posts"
     label: "Posts"
     folder: "src/posts"
-    extension: 'json'
+    extension: 'html'
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {
           label: "Layout",
