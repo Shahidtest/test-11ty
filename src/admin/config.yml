@@ -22,17 +22,4 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Post Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
-  - name: "pposts"
-    label: "PPosts"
-    files:
-      - label: "pposts"
-        name: "ppposts"
-        file: "src/posts/posts.json"
-        fields:
-          - label: "Post List"
-            name: "ppposts"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Featured Image", name: "featuredImage", widget: "image" }
      
